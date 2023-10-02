@@ -1,5 +1,5 @@
 _version : "x.x.x" 
-_customData : (encompasses _BPMChanges, _bookmarks, and "time")
+_customData : (encompasses _BPMChanges, _bookmarks, and "time" ALL OPTIONAL, ONLY FOR EDITOR)
     _time : 501 (total runtime of level(?) not measured in seconds it seems)
     _BPMChanges : (timestamps and data of tempo changes)
         [BPMChange no.]
