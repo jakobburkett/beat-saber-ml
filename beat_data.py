@@ -1,18 +1,22 @@
 # start for a class that has the info in the info.dat files (may change based on file version?)
 
 class Difficulty_Beatmap_Sets:
-    def __init__(self, difficulty, difficulty_rank, beatmap_filename)
-        # these are the things that make up one
-        # difficulty_rank = 1,
-        #         beatmap_filename = "EasyStandard.dat",
-        #         note_jump_movement_speed = 10,
-        #         note_jump_start_beat_offset = 1.0399999618530273,
-        #         editor_offset = 0,
-        #         editor_old_offset = 0,
-        #         warnings = ["EpilepsyWarning: Map contains flashing lights"],
-        #         information = [],
-        #         suggestions = [],
-        #         requirements = []
+    def __init__(self, difficulty = None, difficulty_rank = None, beatmap_filename = None):
+        self.difficulty = "Easy" if difficulty == None else difficulty
+        # i assume difficulty rank is just difficulty * 2 + 1 (for easy = 0, etc.)
+        # if thats how it works, difficulty_rank can be removed an derived from difficulty or the other way around
+        self.difficulty_rank = "1" if difficulty_rank == None else difficulty_rank
+        self.beatmap_filename = difficulty + "Standard.dat" if beatmap_filename == None else beatmap_filename
+
+        # based on difficulty too???
+        note_jump_movement_speed = 10
+        note_jump_start_beat_offset = 1.0
+        editor_offset = 0
+        editor_old_offset = 0
+        warnings = ["EpilepsyWarning: Map contains flashing lights"]
+        information = []
+        suggestions = []
+        requirements = []
 
 class Info:
     def __init__(self, version = None, song_name = None, song_sub_name = None, 
@@ -34,6 +38,12 @@ class Info:
         self.song_time_offset = 0 if song_time_offset == None else song_time_offset
         # self.customData:
         self.contributors = []
+
+        self.diff_beatmap_sets = [Difficulty_Beatmap_Sets("Easy", 1),
+                                  Difficulty_Beatmap_Sets("Normal", 3), 
+                                  Difficulty_Beatmap_Sets("Hard", 5), 
+                                  Difficulty_Beatmap_Sets("Expert", 7), 
+                                  Difficulty_Beatmap_Sets("ExpertPlus", 9)]
         # probably able to do this with just a difficulty variable, all varables in the value of the dict is the same
         # self.difficulty_beatmap_sets = {
         #     "Easy": [
@@ -75,7 +85,7 @@ class Info:
         #     "Expert": [
         #         difficulty_rank = 7,
         #         beatmap_filename = "ExpertStandard.dat",
-        #         note_jump_movement_speed = 13,
+        #         note_jump_movement_speed = 16,
         #         note_jump_start_beat_offset = -0.20000000298023224,
         #         editor_offset = 0,
         #         editor_old_offset = 0,
