@@ -1,0 +1,26 @@
+_version : "x.x.x" 
+_BPMChanges :
+    (unknown)
+_events : (all lighting fx)
+    [event no.]
+      	_time : long float (time event takes place)
+    	_type : int (type of event)
+    	_value : int? (unknown)
+    [...]
+_notes : (data for each block)
+    [note no.]
+	_time : long float (time note takes place)
+	_lineIndex : int (x pos of block)
+	_lineLayer : int (y pos of block)
+	_type : int (either 0 or 1, red or blue block)
+	_cutDirection : int (dir of note cut, assuming 0-7 for each dir and 8 for dot block)
+    [...]
+_obstacles : (the walls you have to dodge)
+    [obstacle no.]
+	_time : long float (time obstacle appears)
+	_lineIndex : int (x pos of obstacle corner)
+	_type : int (type of obstacle. note: idk if theres more than just type 0)
+	_duration : float (duration of obstacle)
+	_width : int (width of the obstacle)
+_bookmarks : 
+    (unknown)
