@@ -18,5 +18,6 @@ https://github.com/microsoft/AI-For-Beginners
 7. ```pip3 install numpy```
 8. ```pip3 install tqdm```
 9. ```pip3 install scipy```
-10. Current step - will add more soon
-11. ```deactivate```
+10. try to use ```pip3 install essentia```, if this does not work, build it from source
+11. ```python3 ./infer/ddc_server.py``` - this does not work
+12. ```deactivate``` when done
