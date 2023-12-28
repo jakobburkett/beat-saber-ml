@@ -17,5 +17,6 @@ https://github.com/microsoft/AI-For-Beginners
 6. ```pip3 install tensorflow```
 7. ```pip3 install numpy```
 8. ```pip3 install tqdm```
-9. Current step - will add more soon
-10. ```deactivate```
+9. ```pip3 install scipy```
+10. Current step - will add more soon
+11. ```deactivate```
