@@ -8,7 +8,7 @@ https://github.com/microsoft/ML-For-Beginners
 
 https://github.com/microsoft/AI-For-Beginners
 
-# steps i used to install the DDC stuff - WIP
+# steps i used to install the DDC stuff - DOES NOT WORK, IT USES python2
 1. Clone repo https://github.com/chrisdonahue/ddc
 2. ```cd ddc```
 3. ```python3 -m venv .venv```
