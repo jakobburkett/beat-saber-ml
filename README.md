@@ -1,7 +1,10 @@
 # beat-saber-ml
 
 # py and package versions/env info
-python version 3.10.12
+- python version 3.10.12 - maybe not
+
+- check out cntk instead of tensorflow?
+
 
 # tutorials and learning materials
 https://github.com/microsoft/ML-For-Beginners
