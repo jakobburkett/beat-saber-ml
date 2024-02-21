@@ -21,3 +21,16 @@ https://github.com/microsoft/AI-For-Beginners
 7. open docker desktop (for wsl usage)
 8. ```./docker_serve.sh```
 9. ```deactivate``` when done with virtual environment
+
+## (building dataset) (WIP for writing this, be careful <3)
+1. ```cd ddc_fork```
+2. ```mkdir data```
+3. ```cd data```
+4. ```mkdir raw```
+5. ```mkdir json_raw```
+6. ```mkdir json_filt```
+7. ```cd raw```
+8. ```mkdir speirmix```
+9. 
+10. download speirmix from https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=897
+11. 
