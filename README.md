@@ -22,7 +22,7 @@ https://github.com/microsoft/AI-For-Beginners
 8. ```./docker_serve.sh```
 9. ```deactivate``` when done with virtual environment
 
-## (building dataset) (WIP for writing this, be careful <3)
+## (building dataset)
 1. ```cd ddc_fork```
 2. ```mkdir data```
 3. ```cd data```
