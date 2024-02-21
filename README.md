@@ -31,6 +31,10 @@ https://github.com/microsoft/AI-For-Beginners
 6. ```mkdir json_filt```
 7. ```cd raw```
 8. ```mkdir speirmix```
-9. 
-10. download speirmix from https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=897
-11. 
+9. ```cd speirmix```
+10. download and extract/unzip speirmix from https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=897
+11. ```cd ../../../scripts```
+12. ```./smd_1_extract.sh speirmix```
+13. ```./smd_2_filter.sh speirmix```
+14. ```./smd_3_dataset.sh speirmix```
+15. ```./smd_4_analyze.sh speirmix```
