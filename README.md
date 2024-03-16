@@ -36,3 +36,4 @@ https://github.com/microsoft/AI-For-Beginners
 1. ```./sml_onset_1_chart.sh speirmix```
 2. ```./sml_onset_1_chart.sh speirmix```
 3. ```./sml_onset_2_train.sh speirmix```
+4. ```./sml_sym_2_mark.sh speirmix 5```
