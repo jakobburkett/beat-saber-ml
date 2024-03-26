@@ -11,8 +11,10 @@ https://github.com/microsoft/ML-For-Beginners
 
 https://github.com/microsoft/AI-For-Beginners
 
+
+# PLEASE DO NOT PUSH ANYTHING FROM ddc_research_fork/ddc/data
 # steps i used to run the DDC stuff (demo)
-1. Clone repo https://github.com/jb410817/ddc_fork
+1. Clone repo https://github.com/jb410817/ddc_research_fork
 2. ```cd ddc_fork```
 3. ```python3 -m venv .venv```
 4. ```source .venv/bin/activate```
@@ -23,14 +25,14 @@ https://github.com/microsoft/AI-For-Beginners
 9. ```deactivate``` when done with virtual environment
 
 ## (building dataset)
-1. ```cd ddc_fork```
-3. ```cd data/raw/speirmix```
-4. download and extract/unzip speirmix from https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=897
-5. ```cd ../../../scripts```
-6. ```./smd_1_extract.sh speirmix```
-7. ```./smd_2_filter.sh speirmix```
-8. ```./smd_3_dataset.sh speirmix```
-9. ```./smd_4_analyze.sh speirmix```
+1. ```cd ddc_research_fork/ddc```
+2. ```cd data/raw/speirmix```
+3. download and extract/unzip speirmix from https://zenius-i-vanisher.com/v5.2/viewsimfilecategory.php?categoryid=897
+4. ```cd ../../../scripts```
+5. ```./smd_1_extract.sh speirmix```
+6. ```./smd_2_filter.sh speirmix```
+7. ```./smd_3_dataset.sh speirmix```
+8. ```./smd_4_analyze.sh speirmix```
 
 ## training
 1. ```./sml_onset_1_chart.sh speirmix```
