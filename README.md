@@ -14,7 +14,7 @@ https://github.com/microsoft/AI-For-Beginners
 
 # PLEASE DO NOT PUSH ANYTHING FROM ddc_research_fork/ddc/data
 # steps i used to run the DDC stuff (demo)
-1. Clone repo https://github.com/jb410817/ddc_research_fork
+1. Clone repo https://github.com/jakobburkett/ddc_research_fork
 2. ```cd ddc_fork```
 3. ```python3 -m venv .venv```
 4. ```source .venv/bin/activate```
