@@ -40,3 +40,10 @@ https://github.com/microsoft/AI-For-Beginners
 3. ```./sml_onset_2_train.sh speirmix```
 4. ```./sml_sym_2_train.sh speirmix```
 5. ```./sml_sym_2_mark.sh speirmix 5```
+
+
+## NOTES
+1. Lots of errors. WIll update requiremnts.txt soon
+2. Cuda 10, tensorflow 1.13 (oldest possible) with some minor modifications
+3. Changing batch size didn't fix issue, however I changed the pad_size to match the batch_size to remove a matrix shape mismatch when you change the batch size from 256.
+4. I was still getting the Blas Gemm error, but I removed ~/.nv cache folder and it hasnt crashed yet. But is taking forever to get to the point it was when it usually crashes
