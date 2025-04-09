@@ -52,9 +52,10 @@ https://github.com/microsoft/AI-For-Beginners
 
 ## HOW TO RUN TRAINED MODEL
 For me, it was going into the infer/ directory and running 
-``` python ddc_server.py \
-                                                            --sp_ckpt_fp=../learn/tmp/train_perplexity/onset_net_train-40000 \
-                                                            --ss_ckpt_fp=../learn/tmp/train_sym/onset_net_train-11600 \
-                                                            --labels_txt_fp=server_aux/labels_4_0123.txt \
-                                                            --norm_pkl_fp=server_aux/norm.pkl \
-                                                            --sp_batch_size=256```
+```
+python ddc_server.py \
+  --sp_ckpt_fp=../learn/tmp/train_perplexity/onset_net_train-40000 \
+  --ss_ckpt_fp=../learn/tmp/train_sym/onset_net_train-11600 \
+  --labels_txt_fp=server_aux/labels_4_0123.txt \
+  --norm_pkl_fp=server_aux/norm.pkl \
+  --sp_batch_size=256```
