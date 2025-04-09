@@ -58,4 +58,8 @@ python ddc_server.py \
   --ss_ckpt_fp=../learn/tmp/train_sym/onset_net_train-11600 \
   --labels_txt_fp=server_aux/labels_4_0123.txt \
   --norm_pkl_fp=server_aux/norm.pkl \
-  --sp_batch_size=256```
+  --sp_batch_size=256
+```
+
+## Notes on this
+This is under the presumption that the train_perplexity is where step placement model is stored and that the train_sym is where the step selection model is stored
